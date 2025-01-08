@@ -14,11 +14,11 @@ const Award = () => {
           <div className="pt-10 pb-24 flex flex-col md:flex-row items-center justify-center gap-8">
             <div className="md:w-1/2 w-full">
               <h1 className="text-white font-bold text-3xl hidden md:block">
-                <span className="font-semibold">Digital Gravity, a</span> <br />
+                <span className="font-semibold">Maven Tech Digital, a</span> <br />
                 Synonym of Quality, Trust and <br /> Distinction
               </h1>
               <h1 className="text-white font-bold text-3xl block md:hidden">
-                <span className="font-semibold">Digital Gravity,a&nbsp;</span>
+                <span className="font-semibold">Maven Tech Digital,a&nbsp;</span>
                 Synonym of Quality, Trust and Distinction
               </h1>
               <p className="text-white text-sm pt-2">
@@ -29,7 +29,7 @@ const Award = () => {
                   {" "}
                   Hire web designers and web developers in Dubai
                 </span>{" "}
-                from Digital Gravity to build highly responsive, scalable, and
+                from Maven Tech Digital to build highly responsive, scalable, and
                 robust web applications with a touch of finesse.
               </p>
             </div>

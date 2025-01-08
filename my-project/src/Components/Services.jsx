@@ -292,7 +292,7 @@ const services = [
     name: "Web Development",
     bgImage: WebBg,
     description:
-      "Get an edge over your competitors and boost your profitability with magnetic web experiences. Digital Gravity is the choice of the UAE’s leading brands for website design and web development services in Dubai. Whether it’s custom web development or WordPress web development, we make sure you get the best of both worlds in the form of a responsive, secure, and high-performance website.",
+      "Get an edge over your competitors and boost your profitability with magnetic web experiences.Maven Tech Digital is the choice of the UAE’s leading brands for website design and web development services in Dubai. Whether it’s custom web development or WordPress web development, we make sure you get the best of both worlds in the form of a responsive, secure, and high-performance website.",
     rightImage: WebRight,
   },
   {

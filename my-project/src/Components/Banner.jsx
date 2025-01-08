@@ -123,12 +123,12 @@ const Banner = () => {
         <div className=" mt-2 w-full md:w-[50%] px-4 md:px-20">
           <p className="text-sm text-white md:text-base text-center md:text-start pt-14 md:pt-0">
             You have an idea, we have the talent and resources to turn it into a
-            reality. Digital Gravity is a globally recognized digital agency
+            reality. Maven Tech Digital is a globally recognized digital agency
             elevating brands through ground-breaking user experience and
             disruptive digital products.
           </p>
 
-          <div className="flex justify-center md:justify-start gap-4  text-white">
+          {/* <div className="flex justify-center md:justify-start gap-4  text-white">
                 <div className="bg-[#00000080] md:w-44 h-16 p-2 rounded-md border border-white">
                   <div className="flex items-center justify-between h-full">
                     <div>
@@ -173,7 +173,7 @@ const Banner = () => {
                 </div>
 
              
-              </div>
+              </div> */}
 
 
           <div className="flex text-white group gap-2 items-center md:justify-start justify-center mt-4 py-8 md:py-0 ">

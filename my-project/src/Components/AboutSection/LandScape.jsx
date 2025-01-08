@@ -61,7 +61,7 @@ const LandScape = () => {
               We Pilot You to Take on the Digital Landscape
             </h1>
             <p className="md:text-sm text-base pt-2 text-[#7C7C7C]">
-              At Digital Gravity, we have leading industry professionals and
+              At Maven Tech Digital, we have leading industry professionals and
               state-of-the-art technology to ensure your business and brands
               lifts up on the digital front. Our approach is highly strategic and
               carefully executed to transform your business the way you want,

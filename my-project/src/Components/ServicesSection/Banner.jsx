@@ -5,12 +5,50 @@ import { IoLogoYoutube } from "react-icons/io";
 import heroFormBg from "../../assets/heroFormBg.svg";
 import { useState } from "react";
 import { HiMiniArrowLongRight } from "react-icons/hi2";
+import axios from "axios";
 
 const Banner = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [textArea, setTextArea] = useState("");
+  const [message, setMessage] = useState("");
+  const [loading,setLoading] = useState("");
+
+
+
+  const handleSubmit = async(e) =>{
+      e.preventDefault();
+
+      try{
+        const data = {
+          name,
+          email,
+          phone,
+          message}
+
+           console.log(data) 
+
+           const config ={
+            headers:{
+              "Content-Type":"application/json"
+            }
+            }
+            const res = await axios.post("https://be.maventechdigital.ae/api/signup.php",data,config)
+            console.log(res.data)
+            if(res.status === 200 || res.status === 201){
+              alert("Message sent successfully")
+              setName("")
+              setEmail("")
+              setPhone("")
+              setMessage("")
+            }
+           }
+
+
+      catch(err){
+        console.log(err)
+      }
+  }
 
   return (
     <div className="w-[90%] mx-auto pt-20">
@@ -111,7 +149,7 @@ const Banner = () => {
               our <span className="text-primary">Career</span> section.
             </p>
             <div>
-              <form action="" className="">
+              <form action="" onSubmit={handleSubmit} className="">
                 <div className="relative h-10 w-full my-3">
                   <input
                     type="text"
@@ -183,13 +221,13 @@ const Banner = () => {
                 <div className="relative h-10 w-full my-3">
                   <textarea
                     required
-                    value={textArea}
-                    onChange={(e) => setTextArea(e.target.value)}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     className="block w-full h-14 border-0 border-b border-gray-400 bg-transparent focus:outline-none focus:ring-0 focus:border-black peer"
                   />
                   <label
                     className={`absolute left-0 bottom-2 text-gray-500 text-[10px] transition-all duration-300 pointer-events-none peer-focus:bottom-8 peer-focus:text-gray-500 ${
-                      textArea ? "bottom-8 text-[10px]" : ""
+                      message ? "bottom-8 text-[10px]" : ""
                     }`}
                   >
                     Your Message*
@@ -197,7 +235,7 @@ const Banner = () => {
                   <div className="absolute bottom-0 left-0 h-[2px] w-full bg-transparent">
                     <div
                       className={`h-full w-full transform origin-center scale-x-0 transition-transform duration-300 
-      peer-focus:scale-x-100 ${textArea ? "scale-x-100" : ""}`}
+      peer-focus:scale-x-100 ${message ? "scale-x-100" : ""}`}
                     />
                   </div>
                 </div>

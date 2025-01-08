@@ -19,15 +19,15 @@ const Banner = () => {
             for the Digital Future
           </h1>
 
-
           <h1 className=" text-white font-bold text-3xl pt-10 md:hidden block">
-          We <span className="text-primary">Inspire & Innovate Brands</span> for the Digital Future
+            We <span className="text-primary">Inspire & Innovate Brands</span>{" "}
+            for the Digital Future
           </h1>
         </div>
 
         <div className="md:w-1/3 w-full md:mt-16 my-8 text-white md:text-sm text-base">
           <p>
-            Digital Gravity takes pride in highly successful projects for
+            Maven Tech Digital takes pride in highly successful projects for
             amazing clients. We are fully-integrated agency to bag case studies
             covering digital marketing, advertising, design& development,
             packaging, PR and much more; all from a single dedicated team.
